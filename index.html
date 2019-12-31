@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron" style="box-shadow: 2px 2px 2px 2px gray; background-color:lavender;">
+            <h1 class="display-4 text-center">Crystal Collector!</h1>
+            <p class="lead text-center">Can you hit the magic target number to win??</p>
+            <hr class="my-4" style="box-shadow: 2px 2px 2px gray;">
+            <div class="text-center">
+                <button class="btn btn-secondary btn-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="box-shadow: 2px 2px 2px gray;">
+                Instructions
+              </button>
+            </div>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <ol>
+                        <li>You will be given a random number at the start of the game. </li>
+                        <li> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+                        <li>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
+                        <li>The value of each crystal is hidden from you until you click on it.</li>
+                        <li>Each time when the game starts, the game will change the values of each crystal</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 50px;">
+
+            <div class="col-lg-6">
+                <div class="card" style="box-shadow: 2px 2px 2px gray;">
+                    <div class="card-header text-center" style="background-color:lightgrey; ">
+                        Select a Crystal
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="assets/images/blue.png" id="blue">
+                        <img src="assets/images/purple.png" alt="" id="purple">
+                        <img src="assets/images/red.png" alt="" id="red">
+                        <img src="assets/images/yellow.png" alt="" id="yellow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card" style="box-shadow: 2px 2px 2px gray;">
+                    <div class="card-header text-center" style="background-color:lightgrey;">
+                        Magic Number
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 id="magicNumber"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card" style="box-shadow: 2px 2px 2px gray;">
+                    <div class="card-header text-center" style="background-color:lightgrey;">
+                        Your Current Score
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 id="currentScore"></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-bottom: 50px;">
+
+            <div class="col-lg-6">
+                <div class="card" style="box-shadow: 2px 2px 2px gray;">
+                    <div class="card-header text-center" style="background-color:lightgrey;">
+                        Wins
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 id="winCount">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card" style="box-shadow: 2px 2px 2px gray;">
+                    <div class="card-header text-center" style="background-color:lightgrey;">
+                        Losses
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 id="lossCount">0</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- External JS -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

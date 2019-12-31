@@ -1,0 +1,20 @@
+.card-header {
+    font-size: large;
+    font-weight: bold;
+}
+
+.jumbotron {
+    margin-top: 30px;
+}
+
+.card-body {
+    color: #ec184d;
+}
+
+ol {
+    color: black;
+}
+
+img:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
