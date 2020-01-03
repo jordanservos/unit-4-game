@@ -7,14 +7,26 @@
     margin-top: 30px;
 }
 
+#jumbo {
+    padding: 2rem 2rem;
+}
+
+.jumbotron h1 {
+    font-family: 'Elsie Swash Caps', cursive;
+}
+
 .card-body {
     color: #ec184d;
 }
 
-ol {
+ul {
     color: black;
 }
 
 img:hover {
     box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
+
+body {
+    background-image: url("https://images.wallpaperscraft.com/image/3d_crystal_crystals_3d_crystal_blue_crystal_65268_1920x1080.jpg");
 }

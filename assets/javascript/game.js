@@ -41,7 +41,7 @@ var randomNumber = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-//Gsme start function
+//Game start function
 
 var gameStart = function() {
     // reset score to 0
@@ -118,4 +118,14 @@ $("#red").click(function() {
 
 $("#yellow").click(function() {
     crystalValueChange(crystal.yellow);
+});
+
+$("#reset-game").click(function() {
+
+    wins = 0;
+    losses = 0;
+    $("#winCount").html(wins)
+    $("#lossCount").html(wins)
+    gameStart();
+
 });
